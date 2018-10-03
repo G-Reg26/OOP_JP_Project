@@ -18,7 +18,7 @@ public abstract class Product implements Item {
   private String name;
 
   //This will store the next number to be assigned to serialNumber
-  private static Integer currentProductionNumber = 0;
+  private static int currentProductionNumber = 0;
 
   /**
    * Initializes all private fields as well as increment currentProductionNumber the next instance
