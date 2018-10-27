@@ -4,7 +4,7 @@ Class project for my Object Oriented Programming course
 # About
 This program implements classes, interfaces, and enums in order to create a flexible
 structure for any production line. The Java collection ArrayList is used to contain objects
-that extend the abstract class product. The list is then sorted and its object's information
+that extend the abstract class, Product. The list is then sorted and its object's information
 is printed to the console.
 
 # Key Learnings
@@ -23,6 +23,6 @@ is printed to the console.
 JP Project steps 1-16
 
 # Credits
-Author: Gregorio Lozada
-Class and Interface structure and implementation provided by Oracle Academy.
+Author: Gregorio Lozada<br />
+Class and Interface structure and implementation provided by Oracle Academy.<br />
 Main driver class provided by repl.it JPP 16 assignment.
