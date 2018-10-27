@@ -1,16 +1,18 @@
 /**
  * Gregorio Lozada Sept 29, 2018
  *
+ * Updated Oct 27, 2018: Implements comparable as well as define its compareTo method
+ *
  * Product: An abstract class that implements the interface Item. Its constructor takes in a string
- * called and initializes its private fields. Product also defines the methods in the Item interface
- * and overrides Object's toString method.
+ * called name and initializes its private fields. Product also defines the methods in the Item
+ * interface and overrides Object's toString method.
  *
  * Instructions to create this class were provided by Oracle Academy.
  */
 
 import java.util.Date;
 
-public abstract class Product implements Item {
+public abstract class Product implements Item, Comparable<Product> {
 
   private int serialNumber;
   private String manufacturer;
@@ -18,7 +20,7 @@ public abstract class Product implements Item {
   private String name;
 
   //This will store the next number to be assigned to serialNumber
-  private static int currentProductionNumber = 0;
+  private static int currentProductionNumber = 1;
 
   /**
    * Initializes all private fields as well as increment currentProductionNumber the next instance
@@ -73,11 +75,15 @@ public abstract class Product implements Item {
   public String toString() {
     String productInfo;
 
-    productInfo = "Manufacturer  : " + manufacturer + "\n" +
+    productInfo = "Manufacturer : " + manufacturer + "\n" +
         "Serial Number : " + serialNumber + "\n" +
-        "Date          : " + manufacturedOn + "\n" +
-        "Name          : " + name;
+        "Date : " + manufacturedOn + "\n" +
+        "Name : " + name;
 
     return productInfo;
+  }
+
+  public int compareTo(Product product) {
+    return this.name.compareTo(product.getName());
   }
 }

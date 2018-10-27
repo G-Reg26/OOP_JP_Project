@@ -1,43 +1,77 @@
 /**
- * Gregorio Lozada Sept 29, 2018
+ * Gregorio Lozada Oct 27, 2018
  *
- * Main: Creates two objects of type Widget and prints them out to the console.
+ * Main: Tests the Java collection ArrayList by creating a list of Product objects, sorts the list,
+ * and prints the list out to the console.
  *
- * Widget: Class that extends the abstract class product. Its constructor takes in a string called
- * name and passes it to product's constructor.
- *
- * Code for class Main and Widget were provided by Prof. Scott VanSelow through Canvas.
+ * Code for class Main was provided by the JPP 16 assignment in repl.it.
  */
+
+import java.util.ArrayList;
+import java.util.Collections;
 
 public class Main {
 
+  /***
+   * Creates an ArrayList of Product objects, sets the list, sorts the list, and prints out the
+   * list.
+   *
+   * @param args
+   */
   public static void main(String[] args) {
-    //Create widget named Widget1
-    Widget w1 = new Widget("Widget1");
-    //Print out w1
-    System.out.println(w1.toString());
-    //Create widget named Widget1
-    Widget w2 = new Widget("Widget2");
-    //Print out w2
-    System.out.println(w2.toString());
 
-    //For each value in ItemType
-    for (ItemType it : ItemType.values()) {
-      //Print type and its code
-      System.out.println(it + " " + it.code);
-    }
+    // Write one line of code to create an ArrayList of products
+    ArrayList<Product> productList;
+
+    // Write one line of code to call testCollection and assign the result to the ArrayList
+    productList = testCollection();
+
+    // Write one line of code to sort the ArrayList
+    Collections.sort(productList);
+
+    // Call the print method on the ArrayList
+    print(productList);
   }
-}
 
-class Widget extends Product {
+  // Step 15
+  // Complete the header for the testCollection method here
+
+  /***
+   * Tests the java collection ArrayList by initializing objects of subclasses of the Product class
+   * and adds them to a list.
+   *
+   * @return returns the list of product objects.
+   */
+  public static ArrayList<Product> testCollection() {
+
+    AudioPlayer a1 = new AudioPlayer("iPod Mini", "MP3");
+    AudioPlayer a2 = new AudioPlayer("Walkman", "WAV ");
+    MoviePlayer m1 = new MoviePlayer("DBPOWER MK101",
+        new Screen(" 720x480", 40, 22), MonitorType.LCD);
+    MoviePlayer m2 = new MoviePlayer("Pyle PDV156BK",
+        new Screen("1366x768", 40, 22), MonitorType.LED);
+
+    // Write one line of code here to create the collection
+    ArrayList<Product> products = new ArrayList<>();
+
+    products.add(a1);
+    products.add(a2);
+    products.add(m1);
+    products.add(m2);
+    return products;
+  }
+
+  // Step 16
+  // Create print method here
 
   /**
-   * Takes the the string parameter and passes it to the super class constructor, in this case
-   * Product's constructor
+   * Prints each object in the parameter list to the console.
    *
-   * @param name the name of the widget
+   * @param list the list of products that will be printed out to the console.
    */
-  public Widget(String name) {
-    super(name);
+  public static void print(ArrayList<Product> list) {
+    for (Product product : list) {
+      System.out.println(product);
+    }
   }
 }

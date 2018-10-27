@@ -1,6 +1,8 @@
 /**
  * Gregorio Lozada Sept 29, 2018
  *
+ * Updated Oct 27, 2018: Changed enum value names
+ *
  * ItemType: Enum that contains values for each type of item as well as a type's code. It also has a
  * constructor that takes in a string called code and sets the constant field of the same name to
  * it.
@@ -9,10 +11,10 @@
  */
 
 enum ItemType {
-  Audio("AU"),
-  Visual("VI"),
-  AudioMobile("AM"),
-  VisualMobile("VM");
+  AUDIO("AU"),
+  VISUAL("VI"),
+  AUDIOMOBILE("AM"),
+  VISUALMOBILE("VM");
 
   public final String code;
 
