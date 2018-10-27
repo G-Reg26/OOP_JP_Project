@@ -8,11 +8,11 @@ that extend the abstract class product. The list is then sorted and its object's
 is printed to the console.
 
 # Key Learnings
-*Abstract Classes and Interfaces
-*Overriding and Overloading
-*Inherritance
-*Polymorphism
-*Java Collections
+* Abstract Classes and Interfaces
+* Overriding and Overloading
+* Inherritance
+* Polymorphism
+* Java Collections
 
 # Installation
 1. Download the zip of this project and extract to desired directory
