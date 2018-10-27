@@ -1,4 +1,28 @@
-# OOP_Program_Alpha
-OOP JP Project
+# OOP JP Project
+Class project for my Object Oriented Programming course
 
-This program creates the interface Item, the enum ItemType, and the abstract class Product, and tests them in the Main class using objects of type Widget, which inherrits from Product, by printing them out to the console using Product's overridden toString method, as well as print out each value in the ItemType enum.
+# About
+This program implements classes, interfaces, and enums in order to create a flexible
+structure for any production line. The Java collection ArrayList is used to contain objects
+that extend the abstract class product. The list is then sorted and its object's information
+is printed to the console.
+
+# Key Learnings
+-Abstract Classes and Interfaces
+-Overriding and Overloading
+-Inherritance
+-Polymorphism
+-Java Collections
+
+# Installation
+1. Download the zip of this project and extract to desired directory
+2. Set up basic Java "Hello World" project
+3. Overwrite projce src folder with the this project's src folder
+
+# Project Status
+JP Project steps 1-16
+
+# Credits
+Author: Gregorio Lozada
+Class and Interface structure and implementation provided by Oracle Academy.
+Main driver class provided by repl.it JPP 16 assignment.
