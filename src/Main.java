@@ -63,15 +63,17 @@ public class Main {
 
   // Step 16
   // Create print method here
-
   /**
    * Prints each object in the parameter list to the console.
    *
-   * @param list the list of products that will be printed out to the console.
+   * How to implement this code was provided by the user gexicide from stack overflow:
+   * https://stackoverflow.com/questions/22860582/java-generics-wildcard-vs-type-parametere/22860768
+   *
+   * @param list the list that will be printed out to the console.
    */
-  public static void print(ArrayList<Product> list) {
-    for (Product product : list) {
-      System.out.println(product);
+  public static <T> void print(ArrayList<T> list) {
+    for (T listObject : list) {
+      System.out.println(listObject);
     }
   }
 }
