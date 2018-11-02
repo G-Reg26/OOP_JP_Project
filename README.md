@@ -24,5 +24,6 @@ JP Project steps 1-16
 
 # Credits
 Author: Gregorio Lozada<br />
-Class and Interface structure and implementation provided by Oracle Academy<br />
+Class and Interface structure and implementation provided by Oracle Academy:<br />
+https://fgcu.instructure.com/courses/499306/files/39657014/download?verifier=rOFctJ6c1jf2ssWuzyM28bALrlMnJABuNMNPFde6&wrap=1<br />
 Main driver class provided by repl.it JPP 16 assignment
