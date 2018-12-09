@@ -1,5 +1,7 @@
 /**
- * Gregorio Lozada Oct 27, 2018
+ * @author Gregorio Lozada
+ *
+ * Oct 27, 2018
  *
  * MonitorType: Enum that contains values for each type of monitor.
  *

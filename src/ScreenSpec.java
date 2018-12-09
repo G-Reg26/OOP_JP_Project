@@ -1,5 +1,7 @@
 /**
- * Gregorio Lozada Oct 27, 2018
+ * @author Gregorio Lozada
+ *
+ * Oct 27, 2018
  *
  * ScreenSpec: Interface that contains getters and for resolution, refresh rate, and response time.
  *

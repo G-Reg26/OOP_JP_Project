@@ -1,5 +1,7 @@
 /**
- * Gregorio Lozada Oct 27, 2018
+ * @author Gregorio Lozada
+ *
+ * Oct 27, 2018
  *
  * Screen: A class that extends implements the interface ScreenSpec. Its constructor takes in a
  * string called resolution, and two ints called refreshRate and responseTime that are used to
@@ -11,13 +13,24 @@
 
 public class Screen implements ScreenSpec {
 
+  /**
+   * Screen resolution
+   */
   String resolution;
+
+  /**
+   * Screen refresh rate
+   */
   int refreshRate;
+
+  /**
+   * Screen response time
+   */
   int responseTime;
 
-  /***
-   * Takes in the string parameter resolution and the two ints refreshRate and responseTime,
-   * and sets the private fields of the same name with their values
+  /**
+   * Takes in the string parameter resolution and the two ints refreshRate and responseTime, and
+   * sets the private fields of the same name with their values
    *
    * @param resolution screen resolution
    * @param refreshRate screen refresh rate
@@ -29,21 +42,36 @@ public class Screen implements ScreenSpec {
     this.responseTime = responseTime;
   }
 
+  /**
+   * Getter method for resolution
+   *
+   * @return resolution
+   */
   public String getResolution() {
     return resolution;
   }
 
+  /**
+   * Getter method for refresh rate
+   *
+   * @return refresh rate
+   */
   public int getRefreshRate() {
     return refreshRate;
   }
 
+  /**
+   * Getter method for response time
+   *
+   * @return response time
+   */
   public int getResponseTime() {
     return responseTime;
   }
 
   /**
    * Override toString to return the screen's information such as resolution, refresh rate, and
-   * response time.
+   * response time
    *
    * @return the information of the specific instance of this class
    */

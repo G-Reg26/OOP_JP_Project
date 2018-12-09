@@ -1,5 +1,7 @@
 /**
- * Gregorio Lozada Oct 27, 2018
+ * @author Gregorio Lozada
+ *
+ * Oct 27, 2018
  *
  * MoviePlayer: A class that extends Product and implements the interface MultiMediaControl. Its
  * constructor takes in a string called name that is passed to Product's constructor, a Screen
@@ -11,10 +13,17 @@
 
 public class MoviePlayer extends Product implements MultimediaControl {
 
+  /**
+   * Screen of this product
+   */
   Screen screen;
+
+  /**
+   * Type of monitor of this product
+   */
   MonitorType monitorType;
 
-  /***
+  /**
    * Takes in the string name and passes name to Movie Player's super class as well as takes in a
    * screen and monitor type and sets the private fields with them.
    *
@@ -28,18 +37,30 @@ public class MoviePlayer extends Product implements MultimediaControl {
     this.monitorType = monitorType;
   }
 
+  /**
+   * Print out the word "Playing"
+   */
   public void play() {
     System.out.println("Playing");
   }
 
+  /**
+   * Print out the word "Stopping"
+   */
   public void stop() {
     System.out.println("Stopping");
   }
 
+  /**
+   * Print out the word "Previous"
+   */
   public void previous() {
     System.out.println("Previous");
   }
 
+  /**
+   * Print out the word "Next"
+   */
   public void next() {
     System.out.println("Next");
   }

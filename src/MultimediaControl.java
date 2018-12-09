@@ -1,5 +1,7 @@
 /**
- * Gregorio Lozada Oct 27, 2018
+ * @author Gregorio Lozada
+ *
+ * Oct 27, 2018
  *
  * MultiMediaControl: Interface that contains the methods for a multimedia product's controls.
  *

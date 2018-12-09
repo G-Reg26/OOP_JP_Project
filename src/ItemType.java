@@ -1,5 +1,7 @@
 /**
- * Gregorio Lozada Sept 29, 2018
+ * @author Gregorio Lozada
+ *
+ * Sept 29, 2018
  *
  * Updated Oct 27, 2018: Changed enum value names
  *

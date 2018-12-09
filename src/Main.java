@@ -1,5 +1,7 @@
 /**
- * Gregorio Lozada Oct 27, 2018
+ * @author Gregorio Lozada
+ *
+ * Oct 27, 2018
  *
  * Main: Tests the Java collection ArrayList by creating a list of Product objects, sorts the list,
  * and prints the list out to the console.
@@ -12,11 +14,11 @@ import java.util.Collections;
 
 public class Main {
 
-  /***
+  /**
    * Creates an ArrayList of Product objects, sets the list, sorts the list, and prints out the
-   * list.
+   * list
    *
-   * @param args
+   * @param args command-line arguments
    */
   public static void main(String[] args) {
 
@@ -31,16 +33,20 @@ public class Main {
 
     // Call the print method on the ArrayList
     print(productList);
+
+    System.out.println();
+
+    printType(productList, AudioPlayer.class);
   }
 
   // Step 15
   // Complete the header for the testCollection method here
 
-  /***
+  /**
    * Tests the java collection ArrayList by initializing objects of subclasses of the Product class
-   * and adds them to a list.
+   * and adds them to a list
    *
-   * @return returns the list of product objects.
+   * @return returns the list of product objects
    */
   public static ArrayList<Product> testCollection() {
 
@@ -61,19 +67,33 @@ public class Main {
     return products;
   }
 
-  // Step 16
-  // Create print method here
   /**
-   * Prints each object in the parameter list to the console.
+   * Prints each object in the parameter list to the console
    *
    * How to implement this code was provided by the user gexicide from stack overflow:
    * https://stackoverflow.com/questions/22860582/java-generics-wildcard-vs-type-parametere/22860768
    *
-   * @param list the list that will be printed out to the console.
+   * @param list the list that will be printed out to the console
+   * @param <T> the class of the objects stored in list
    */
   public static <T> void print(ArrayList<T> list) {
     for (T listObject : list) {
       System.out.println(listObject);
+    }
+  }
+
+  /**
+   * Prints each object in the parameter list of a certain type to the console
+   *
+   * @param list the list that will be printed out
+   * @param type the type of object that will be printed
+   * @param <T> the class of the objects stored in list
+   */
+  public static <T> void printType(ArrayList<T> list, Class<?> type) {
+    for (T listObject : list) {
+      if (listObject.getClass() == type) {
+        System.out.println(listObject);
+      }
     }
   }
 }

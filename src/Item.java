@@ -1,5 +1,7 @@
 /**
- * Gregorio Lozada Sept 29, 2018
+ * @author Gregorio Lozada
+ *
+ * Sept 29, 2018
  *
  * Item: Interface that contains a constant string called manufacturer, as well as getters and
  * setters for serial number, name, and manufacture date.

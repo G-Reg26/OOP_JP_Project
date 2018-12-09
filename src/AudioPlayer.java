@@ -1,5 +1,7 @@
 /**
- * Gregorio Lozada Oct 27, 2018
+ * @author Gregorio Lozada
+ *
+ * Oct 27, 2018
  *
  * AudioPlayer: A class that extends product and implements the interface MultiMediaControl. Its
  * constructor takes in a string called name that is passed to Product's constructor, and a String
@@ -11,13 +13,20 @@
 
 public class AudioPlayer extends Product implements MultimediaControl {
 
+  /**
+   * Type of audio this product is
+   */
   private String audioSpecification;
+
+  /**
+   * Type of media this product is
+   */
   private ItemType mediaType;
 
   /***
    * Takes in the string name and passes name to Audio Player's super class as well as take in the
    * string audioSpecification and sets the private field of the same name and set mediaType to
-   * AUDIO.
+   * AUDIO
    *
    * @param name name of the Audio Player object
    * @param audioSpecification audio specification of the Audio Player
@@ -29,25 +38,37 @@ public class AudioPlayer extends Product implements MultimediaControl {
     mediaType = ItemType.AUDIO;
   }
 
+  /**
+   * Print out the word "Playing"
+   */
   public void play() {
     System.out.println("Playing");
   }
 
+  /**
+   * Print out the word "Stopping"
+   */
   public void stop() {
     System.out.println("Stopping");
   }
 
+  /**
+   * Print out the word "Previous"
+   */
   public void previous() {
     System.out.println("Previous");
   }
 
+  /**
+   * Print out the word "Next"
+   */
   public void next() {
     System.out.println("Next");
   }
 
   /**
    * Override toString to return the audio player's information such as audio specification, and
-   * type.
+   * type
    *
    * @return the information of the specific instance of this class
    */
