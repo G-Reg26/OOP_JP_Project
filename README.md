@@ -20,7 +20,7 @@ is printed to the console.
 3. Overwrite project src folder with the this project's src folder
 
 # Java Doc
-![Java Doc](https://github.com/G-Reg26/OOP_JP_Project/blob/master/JavaDoc/index.html)
+https://g-reg26.github.io/OOP_JP_Project_JavaDoc/
 
 # Class Diagram
 ![Class Diagram](https://github.com/G-Reg26/OOP_JP_Project/blob/master/ClassDiagram.png)
