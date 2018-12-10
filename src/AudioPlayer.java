@@ -38,6 +38,10 @@ public class AudioPlayer extends Product implements MultimediaControl {
     mediaType = ItemType.AUDIO;
   }
 
+  public String getAudioSpecification() {
+    return audioSpecification;
+  }
+
   /**
    * Print out the word "Playing"
    */
