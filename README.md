@@ -3,9 +3,7 @@ Class project for my Object Oriented Programming course
 
 # About
 This program implements classes, interfaces, and enums in order to create a flexible
-structure for any production line. The Java collection ArrayList is used to contain objects
-that extend the abstract class, Product. The list is then sorted and its object's information
-is printed to the console.
+structure for any production line.
 
 # Key Learnings
 * Abstract Classes and Interfaces
@@ -13,6 +11,7 @@ is printed to the console.
 * Inherritance
 * Polymorphism
 * Java Collections
+* Files and Paths
 
 # Installation
 1. Download the zip of this project and extract to desired directory
@@ -26,10 +25,9 @@ https://g-reg26.github.io/OOP_JP_Project_JavaDoc/
 ![Class Diagram](https://github.com/G-Reg26/OOP_JP_Project/blob/master/ClassDiagram.png)
 
 # Project Status
-JP Project steps 1-16
+JP Project steps 1-23 (Complete)
 
 # Credits
 Author: Gregorio Lozada<br />
 Class and Interface structure and implementation provided by Oracle Academy:<br />
 https://fgcu.instructure.com/courses/499306/files/39657014/download?verifier=rOFctJ6c1jf2ssWuzyM28bALrlMnJABuNMNPFde6&wrap=1<br />
-Main driver class provided by repl.it JPP 16 assignment
