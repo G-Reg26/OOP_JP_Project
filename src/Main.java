@@ -111,6 +111,8 @@ public class Main {
           System.out.println("Goodbye");
           exit = true;
           break;
+        default:
+          break;
       }
     }
   }
@@ -167,6 +169,8 @@ public class Main {
         break;
       case 2:
         createMoviePlayer(scan, products);
+        break;
+      default:
         break;
     }
   }
@@ -246,6 +250,8 @@ public class Main {
         break;
       case 2:
         monitorType = MonitorType.LED;
+        break;
+      default:
         break;
     }
 
