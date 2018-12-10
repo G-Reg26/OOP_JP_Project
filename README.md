@@ -19,8 +19,11 @@ is printed to the console.
 2. Set up basic Java "Hello World" project
 3. Overwrite project src folder with the this project's src folder
 
+# Java Doc
+![Java Doc](https://github.com/G-Reg26/OOP_JP_Project/blob/master/JavaDoc/index.html)
+
 # Class Diagram
-![alt text](https://github.com/G-Reg26/OOP_JP_Project/blob/master/ClassDiagram.png)
+![Class Diagram](https://github.com/G-Reg26/OOP_JP_Project/blob/master/ClassDiagram.png)
 
 # Project Status
 JP Project steps 1-16
